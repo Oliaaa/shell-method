@@ -25,7 +25,7 @@ struct new_tab
 	int val;
 };
 
-void dob(price *t, price x)		//прайс таблица
+void dob(price *t, price x)		//price-table
 {
 	strcpy(t[num].code, x.code);
 	t[num].val = x.val;
@@ -93,7 +93,7 @@ void dopolnenie(new_tab *T, table x, price *R)
 
 void print(new_tab *p, FILE *out)
 {
-	fprintf(out, "Шифр\t\tНаименование\tКоличество\tЦена за штуку\n");
+	fprintf(out, "Code \\ t \\ tName \\ tTotal quantity \\ tPrice\n");
 	for (int i = 0; i < N; i++)
 		if (p[i].code[0] != '\0')
 		{
